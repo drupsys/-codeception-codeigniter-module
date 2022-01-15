@@ -18,11 +18,11 @@ down:
 
 .PHONY: shell
 shell:
-	docker exec -it -u package codeception-module sh
+	docker exec -it -u package codeception-codeigniter-module sh
 
 .PHONY: test
 test:
-	docker exec -it codeception-module vendor/bin/codecept run tests/$(filter)
+	docker exec -it codeception-codeigniter-module vendor/bin/codecept run tests/$(filter)
 
 .PHONY: logs
 logs:
@@ -31,4 +31,4 @@ logs:
 .PHONY: setup
 setup:
 	$(MAKE) build
-	docker exec -it -u package codeception-module composer install
+	docker exec -it -u package codeception-codeigniter-module composer install

@@ -1,5 +1,5 @@
 {
-    "name": "drupsys/codeception-module",
+    "name": "drupsys/codeception-codeigniter-module",
     "type": "library",
     "license": "MIT",
     "description": "Codeception objects to support codeigniter 2 projects",
