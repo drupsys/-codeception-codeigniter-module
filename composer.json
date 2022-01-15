@@ -2,7 +2,7 @@
     "name": "drupsys/codeception-codeigniter-module",
     "type": "library",
     "license": "MIT",
-    "description": "Codeception objects to support codeigniter 2 projects",
+    "description": "Codeception module to support codeigniter 2 projects",
     "authors": [
         {
             "name": "Dovydas Rupsys",
