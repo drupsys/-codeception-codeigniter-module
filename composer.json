@@ -2,7 +2,7 @@
     "name": "drupsys/codeception-module",
     "type": "library",
     "license": "MIT",
-    "description": "Codeception objects to support use case based tests",
+    "description": "Codeception objects to support codeigniter 2 projects",
     "authors": [
         {
             "name": "Dovydas Rupsys",
@@ -10,20 +10,16 @@
         }
     ],
     "require": {
-        "php": "^7.4.0",
-        "lstrojny/functional-php": "^1.17",
-        "guzzlehttp/guzzle": "^7.4"
+        "php": "^7.4.0"
     },
     "autoload": {
         "psr-4": {
-            "MVF\\Codeception\\CodeIgniter": "src/"
+            "MVF\\Codeception\\CodeIgniter\\": "src/"
         }
     },
     "require-dev": {
         "symfony/var-dumper": "^5.4",
         "codeception/codeception": "^4.1",
-        "codeception/module-asserts": "^2.0",
-        "scheb/tombstone-logger": "^1.5",
-        "illuminate/database": "^8.79"
+        "codeception/module-asserts": "^2.0"
     }
 }
