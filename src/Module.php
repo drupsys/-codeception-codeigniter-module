@@ -13,7 +13,7 @@ class Module extends \Codeception\Module
         require_once(dirname(__FILE__) . '/Setup.php');
         $this->ci = get_instance();
 
-        require_once('vendor/scheb/tombstone-logger/tombstone-function.php');
+        require_once(getcwd() . '/vendor/scheb/tombstone-logger/tombstone-function.php');
         $graveyard = new GraveyardBuilder();
         $graveyard->rootDirectory(__DIR__);
         $graveyard->autoRegister();
