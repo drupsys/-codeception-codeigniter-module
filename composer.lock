@@ -4,8 +4,157 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "84eb90adacaa755f379b3da2a84e35ba",
-    "packages": [],
+    "content-hash": "d5a1de13ba3bc44778ebb412aebc1693",
+    "packages": [
+        {
+            "name": "psr/log",
+            "version": "1.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/log.git",
+                "reference": "d49695b909c3b7628b6289db5479a1c204601f11"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/d49695b909c3b7628b6289db5479a1c204601f11",
+                "reference": "d49695b909c3b7628b6289db5479a1c204601f11",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Log\\": "Psr/Log/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for logging libraries",
+            "homepage": "https://github.com/php-fig/log",
+            "keywords": [
+                "log",
+                "psr",
+                "psr-3"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/log/tree/1.1.4"
+            },
+            "time": "2021-05-03T11:20:27+00:00"
+        },
+        {
+            "name": "scheb/tombstone-core",
+            "version": "v1.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/scheb/tombstone-core.git",
+                "reference": "96b598f666de945467d30332c10803182b8187f6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/scheb/tombstone-core/zipball/96b598f666de945467d30332c10803182b8187f6",
+                "reference": "96b598f666de945467d30332c10803182b8187f6",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": ">=7.1.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Scheb\\Tombstone\\Core\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Scheb",
+                    "email": "me@christianscheb.de"
+                }
+            ],
+            "description": "Core classes of the scheb/tombstone library",
+            "homepage": "https://github.com/scheb/tombstone",
+            "keywords": [
+                "dead code removal",
+                "tombstone"
+            ],
+            "support": {
+                "source": "https://github.com/scheb/tombstone-core/tree/v1.5.0"
+            },
+            "time": "2021-11-16T19:11:49+00:00"
+        },
+        {
+            "name": "scheb/tombstone-logger",
+            "version": "v1.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/scheb/tombstone-logger.git",
+                "reference": "cada28499b14f59e36c581aca346be0dea1b6a9e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/scheb/tombstone-logger/zipball/cada28499b14f59e36c581aca346be0dea1b6a9e",
+                "reference": "cada28499b14f59e36c581aca346be0dea1b6a9e",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": ">=7.1.3",
+                "psr/log": "^1.0",
+                "scheb/tombstone-core": "self.version"
+            },
+            "suggest": {
+                "scheb/tombstone-analyzer": "Analysis tool for tombstone logs"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Scheb\\Tombstone\\Logger\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Scheb",
+                    "email": "me@christianscheb.de"
+                }
+            ],
+            "description": "Tracking of tombstones to find dead code in your codebase",
+            "homepage": "https://github.com/scheb/tombstone",
+            "keywords": [
+                "Static code analysis",
+                "dead code removal",
+                "dynamic code analysis",
+                "logging",
+                "tombstone"
+            ],
+            "support": {
+                "source": "https://github.com/scheb/tombstone-logger/tree/v1.5.0"
+            },
+            "time": "2021-02-28T13:10:47+00:00"
+        }
+    ],
     "packages-dev": [
         {
             "name": "behat/gherkin",
